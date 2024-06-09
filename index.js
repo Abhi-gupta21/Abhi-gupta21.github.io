@@ -45,9 +45,13 @@ $.get("https://api.weatherbit.io/v2.0/current?lat=39.103699&lon=-84.513611&key=8
     }
 );
 
-if(document.cookie.indexOf("username")<0){
-    alert('welcome to the homepage for the first time!');
-    document.cookie= new Date();
-}else
-    alert("my cookie: your last visit =" + document.cookie);
-    document.cookie = new Date();
+if (document.cookie.indexOf("username") < 0) {
+    alert('Welcome to the homepage for the first time!');
+    // Set a cookie named "username" with the current date as its value
+    document.cookie = "username=" + new Date().toUTCString() + "; path=/";
+} else {
+    alert("My cookie: Your last visit = " + document.cookie);
+    // Update the cookie value to the current date
+    document.cookie = "username=" + new Date().toUTCString() + "; path=/";
+}
+

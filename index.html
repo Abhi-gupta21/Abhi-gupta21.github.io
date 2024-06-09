@@ -2,11 +2,167 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<p>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="
+https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
+" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <p>Hello myname is ABhishek </p>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">ABOUT ME</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu Bar</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="waph.html">Web Application programming and hacking</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="main">
+      <div class="left">
+        <dl class="row">
+          <dt class="col-sm-5 pic"><img src="headshot.png" alt="My headshot" width = '70%'> </dt>
+          <dd class="col-sm-7"></dd>
+          <dt class="col-sm-2">Name - </dt>
+          <dd class="col-sm-10">Sai Abhishek Ketepally</dd>
+        
+          <dt class="col-sm-2">Contact - </dt>
+          <dd class="col-sm-10">
+            <p>Number - +1 513-882-9177</p>
+            <p>Email id - ketepask@mail.uc.edu </p>
+          </dd>
+        
+          <dt class="col-sm-2">Background - </dt>
+          <dd class="col-sm-10">
+              <p>University - University of Cincinnati</p>
+              <p>Major - Computer Science</p>
+              <p>GPA - 3.9</p>
+              <p>skills - C++, C, Python, JS, HTML, CSS, Bootstrap, ROS</p>
+          </dd>
+        
+        </dl>
+      </div>
 
+      <div class="right">
+        <canvas id='analog-clock' width='150' height='150' style="background-color:#999; margin-top: 50px;"></canvas>
+        <div id='digit-clock'></div><br><br>
+        <div id='email' onclick="showhideemail()">Show my email</div><br><br>
+        <p>Joke of the day - </p><br>
+        <div id='response'></div><br>
+        <p>The above text is made by a third party application. It was not made by me.</p><br><br><br>
+        <h3>Todays weather - <div id="weather"></div></h3><br><br>
+        <a href="http://s11.flagcounter.com/more/GvI"><img src="https://s11.flagcounter.com/count2/GvI/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+      </div>
+      </div>
+
+      <h3 style="margin-left: 20px;">My Resume - </h3><br>
+      <iframe class="pdf-preview" src="new_resume_sai_abhishek_2024.pdf" frameborder="0"></iframe><br>
+      <a href="new_resume_sai_abhishek_2024.pdf" download="new_resume_sai_abhishek_2024.pdf" style="margin-left: 40px;" class="pdf">Click to download a PDF copy of my resume</a><br><br><br><br>
+
+      <h3>My projects - </h3>
+
+      <div class="cards">
+        <div class="card" style="width: 18rem; color: azure; background-color: black; margin: 40px;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">LAB-0 Environment set up</h5>
+              <p class="card-text">This lab was just about setting up the environment and getting familiar with it.</p>
+              <a href="https://github.com/Abhi-gupta21/waph-ketepask/tree/main/labs/lab0" class="btn btn-primary">link to my Github for Lab - 0</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem; color: azure; background-color: black; margin: 40px;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">LAB-1 Foundations of Web </h5>
+              <p class="card-text">In this lab we explores about Http GET and POST requests, and also examined them using wireshark.</p>
+              <a href="https://github.com/Abhi-gupta21/waph-ketepask/tree/main/labs/lab1" class="btn btn-primary">link to my Github for Lab - 1</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem; color: azure; background-color: black; margin: 40px;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">LAB-2 Front-End Web Development</h5>
+              <p class="card-text">In this lab we learned HTML, CSS, JS, Ajax, jQuery and Php</p>
+              <a href="https://github.com/Abhi-gupta21/waph-ketepask/tree/main/labs/lab2" class="btn btn-primary">link to my Github for Lab - 2</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem; color: azure; background-color: black; margin: 40px;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Hackathon 1</h5>
+              <p class="card-text">This was my first hackathon and we learned about the ways we could send an alert command even when the website is secure</p>
+              <a href="https://github.com/Abhi-gupta21/waph-ketepask/tree/main/hackathons/hackathon%201" class="btn btn-primary">link to my Github for Hackathon-1</a>
+            </div>
+          </div>
+          </div><br><br>
+
+      <footer class="py-3 mt-auto foot bg-dark text-white">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2" style="color: white;">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2" style="color: white;">Contact</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2" style="color: white;">About</a></li>
+        </ul>
+        <p class="text-center bm">My Professional Website</p>
+    </footer>
+    
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+<script src="
+https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js
+"></script>
+<script src='https://waph-uc.github.io/clock.js'></script>
+<script type="text/javascript">
+    function displaytime(){
+    document.getElementById('digit-clock').innerHTML="Current time: " + Date(); 
+    }
+    setInterval(displaytime,500);
+
+    var canvas=document.getElementById('analog-clock');
+    var ctx=canvas.getContext("2d");
+    var radius = canvas.height / 2;
+    ctx.translate(radius, radius);
+    radius=radius*0.90
+    setInterval(drawClock, 1000);
+    function drawClock(){
+        drawFace(ctx, radius);
+        drawNumbers(ctx, radius);
+        drawTime(ctx, radius);
+    }
+</script>
+<script src="index.js"></script>
 </body>
 </html>

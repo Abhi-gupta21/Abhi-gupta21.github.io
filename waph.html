@@ -4,13 +4,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="
+https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
+" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Web Application Programming and Hacking</h1>
-    <h2>Front-end web devlopment lab</h2>
-    <h3>instructor: Dr. Phu Phung</h3>
-    <h4>Student: Sai Abhishek</h4>
-    <h5>A simple html page</h5>
-    <p>using the <a href="https://www.w3schools.com/html/default.asp">W#Schools template</a></p>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Web Application Programming and Hacking</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <h1 style="margin-top: 100px;">Web Application Programming and Hacking - </h1>
+    <div class="main">
+    <div class="leftt">
+        <h3 style="margin-top: 100px;">About the course - </h3>
+        <p>In this course, students will study basic web application development with front-end
+
+            (HTML5, JavaScript, CSS) and back-end (PHP/MySQL). Web application vulnerabilities and attacks will be introduced and explored with hands-on exercises on the range. Secure programming principles and
+            
+            practices will be introduced to avoid potential web application vulnerabilities and attacks.
+            
+            (Recommended) Prerequisites: Intermediate programming skills in any language.</p><br>
+        <p><b>Topics - </b></p>
+        <ul>
+            <li>The Web and Web Applications</li>
+            <li>Client-side Web development with HTML5, CSS and JS</li>
+            <li>Server-side Web Application Development with PHP and Database (MySQL)</li>
+            <li>Version control (git)</li>
+            <li>Web Application Security: Vulnerabilities and Attacks with Hands-on Exercises</li>
+            <li>Secure Web Programming Principles and Practices</li>
+        </ul>
+    </div>
+    <div class="rightt">
+        <h3>Course Outcomes - </h3>
+        <ul>
+            <li>design, implement, and evaluate a web-based solution to meet a given set of computing requirements in the context of the program’s discipline.</li>
+            <li>understand the principle aspects of concepts of web application security</li>
+            <li>identify and discuss the types of security threats and attacks in web applications and practical experience with hands-on exercises</li>
+            <li>adopt corresponding countermeasures to identified threats in web applications and argue their effectiveness</li>
+            <li>apply practical knowledge of security in designing and implementing web applications with contemporary technologies</li>
+        </ul>
+    </div>
+    </div><br><br>
+
+    <h2 style="margin-top: 30px;">Hands on exercises done in this course so far - </h2>
+
+    <div class="cards">
+        <div class="card" style="width: 18rem; color: azure; background-color: black; margin: 40px;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">LAB-0 Environment set up</h5>
+              <p class="card-text">This lab was just about setting up the environment and getting familiar with it.</p>
+              <a href="https://github.com/Abhi-gupta21/waph-ketepask/tree/main/labs/lab0" class="btn btn-primary">link to my Github for Lab - 0</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem; color: azure; background-color: black; margin: 40px;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">LAB-1 Foundations of Web </h5>
+              <p class="card-text">In this lab we explores about Http GET and POST requests, and also examined them using wireshark.</p>
+              <a href="https://github.com/Abhi-gupta21/waph-ketepask/tree/main/labs/lab1" class="btn btn-primary">link to my Github for Lab - 1</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem; color: azure; background-color: black; margin: 40px;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">LAB-2 Front-End Web Development</h5>
+              <p class="card-text">In this lab we learned HTML, CSS, JS, Ajax, jQuery and Php</p>
+              <a href="https://github.com/Abhi-gupta21/waph-ketepask/tree/main/labs/lab2" class="btn btn-primary">link to my Github for Lab - 2</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem; color: azure; background-color: black; margin: 40px;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Hackathon 1</h5>
+              <p class="card-text">This was my first hackathon and we learned about the ways we could send an alert command even when the website is secure</p>
+              <a href="https://github.com/Abhi-gupta21/waph-ketepask/tree/main/hackathons/hackathon%201" class="btn btn-primary">link to my Github for Hackathon-1</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem; color: azure; background-color: black; margin: 40px;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Individual Project 1</h5>
+              <p class="card-text">Apparently you are browsing my first individual project.</p>
+              <a href="https://github.com/Abhi-gupta21/waph-ketepask/tree/main/hackathons/hackathon%201" class="btn btn-primary">link to my Github for Individual rpoject-1</a>
+            </div>
+          </div>
+    </div>
+
+
+
+
+    <footer class="py-3 mt-auto foot bg-dark text-white">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2" style="color: white;">Home</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link px-2" style="color: white;">Contact</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link px-2" style="color: white;">About</a></li>
+        </ul>
+        <p class="text-center bm">My Professional Website</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+    <script src="
+https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js
+"></script>
 </body>
 </html>

@@ -27,7 +27,7 @@ This is a private repository for Abhishek to store all code from the course. The
 
 # outcomes - HTML, CSS, JS, JQuery, how to use API's, Bootstrap.
 
-## My website - [Abhi-gupta21.github.io](Abhi-gupta21.github.io)
+## My website - [Abhi-gupta21.github.io](https://abhi-gupta21.github.io/index.html)
 
 # my github repo - https://github.com/Abhi-gupta21/Abhi-gupta21.github.io
 
